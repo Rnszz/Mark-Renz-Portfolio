@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Developer portfolio featuring software projects, technical skills, and case studies.">
+<title>Portfolio — Mark Renz</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div id="app">
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Go to home"><span class="brand-mark">MR</span><span>Mark Renz <span class="accent-text">/ Dev</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#skills">Skills</a><a href="#about">About</a><a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>Student developer</div>
+      <h1>Hi, I'm Mark Renz, <span class="accent-text">Student developer.</span></h1>
+      <p class="hero-copy">I’m a student developer learning web and application development, focused on building useful interfaces, understanding application logic, and improving through hands-on practice.</p>
+      <div class="actions"><a class="button primary" href="#skills">Explore my skills</a><a class="button" href="#contact">Contact me</a></div>
+      <div class="hero-meta"><span>Unity and C#</span><span>Web development</span><span>Git and GitHub</span></div>
+    </div>
+    <aside class="profile-card" aria-label="Developer profile summary">
+      <div class="profile-top"><div class="avatar">MR</div><span class="availability">Growing every build</span></div>
+      <h2>Curious by default.</h2><p>Focused on learning the why behind the code, not just making it run.</p>
+      <div class="profile-divider"></div>
+      <div class="mini-stats"><div class="mini-stat"><strong>Unity</strong><span>Interactive apps</span></div><div class="mini-stat"><strong>Web</strong><span>Frontend & backend</span></div><div class="mini-stat"><strong>SQL</strong><span>Data & persistence</span></div><div class="mini-stat"><strong>Git</strong><span>Team collaboration</span></div></div>
+    </aside>
+  </div>
+  
+  <section id="skills"><div class="wrap"><div class="skills-wrap"><div><div class="kicker">Technical toolkit</div><h2 class="section-title">Tools I'm learning to use well.</h2><p class="skills-intro">I list skills by the technologies I've worked with and the areas I'm actively developing. I'll keep improving this section as projects mature.</p></div><div class="skill-groups">
+    <div class="skill-group"><h3>Application development</h3><div class="tags"><span class="tag">C#</span><span class="tag">Unity</span><span class="tag">UI Toolkit</span><span class="tag">Java</span></div></div>
+    <div class="skill-group"><h3>Web development</h3><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">PHP / Laravel</span></div></div>
+    <div class="skill-group"><h3>Data</h3><div class="tags"><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">SQL Server</span><span class="tag">Database design</span></div></div>
+    <div class="skill-group"><h3>Workflow</h3><div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Debugging</span><span class="tag">Responsive UI</span></div></div>
+  </div></div></div></section>
+  <section id="about"><div class="wrap"><div class="section-head"><div><div class="kicker">How I work</div><h2 class="section-title">Learn. Build. Improve.</h2></div><p class="section-description">My approach is to build in small, testable steps and understand how the pieces fit together.</p></div><div class="timeline">
+    <article class="timeline-item"><span class="number">01 / UNDERSTAND</span><h3>Start with the user problem</h3><p>Clarify what the application should help people do before choosing a technical solution.</p></article>
+    <article class="timeline-item"><span class="number">02 / STRUCTURE</span><h3>Keep responsibilities clear</h3><p>Separate interface, application logic, and data concerns so features remain easier to test and maintain.</p></article>
+    <article class="timeline-item"><span class="number">03 / ITERATE</span><h3>Test on real workflows</h3><p>Check interactions, handle errors, and improve based on actual behavior rather than appearance alone.</p></article>
+    <article class="timeline-item"><span class="number">04 / COLLABORATE</span><h3>Use version control</h3><p>Track changes with Git, communicate clearly, and make project progress visible to teammates.</p></article>
+  </div></div></section>
+  <section id="contact"><div class="wrap"><div class="contact-panel"><div><div class="kicker">Contact</div><h2>Have a project or opportunity in mind?</h2><p>I'm building my experience and would be glad to connect about software projects, collaboration, internships, or learning opportunities.</p></div><div class="actions"><a class="button primary" href="https://github.com/Rnszz" target="_blank" rel="noreferrer">GitHub repository ↗</a></div></div></div></section>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year"></span> Mark Renz · Portfolio </span><span>Designed to grow with the work.</span></div></footer>
+<button class="chat-launcher" id="chat-launcher" type="button" aria-label="Ask about Mark Renz" aria-expanded="false" aria-controls="portfolio-chat">✦</button>
+<section class="chat-panel" id="portfolio-chat" role="dialog" aria-label="Portfolio assistant" aria-modal="false">
+  <div class="chat-header"><div><div class="chat-heading">Ask about Mark</div><div class="chat-subtitle">Portfolio assistant</div></div><button class="chat-close" id="chat-close" type="button" aria-label="Close chat">×</button></div>
+  <div class="chat-messages" id="chat-messages" aria-live="polite"><div class="chat-message bot">Hi! Ask me about Mark's projects, skills, or development approach. I'll answer using information available in this portfolio.</div></div>
+  <div class="chat-suggestions"><button type="button" data-question="Tell me about NavigatoAR">NavigatoAR</button><button type="button" data-question="What skills does Mark have?">Skills</button><button type="button" data-question="What is Mark learning?">Learning goals</button></div>
+  <div class="chat-disclaimer">Demo assistant: answers are based on the portfolio's configured information, not a live AI service.</div>
+  <form class="chat-form" id="chat-form"><input id="chat-input" type="text" placeholder="Ask a question…" aria-label="Ask a question" maxlength="500" required><button type="submit">Send</button></form>
+</section>
+</div>
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
