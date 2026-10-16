@@ -105,9 +105,9 @@
     let response;
 
     try {
-      response = await fetch(
-        'http://127.0.0.1:8000/api/chat',
-        {
+     response = await fetch(
+    'https://portfolio-chatbot-pq07.onrender.com/api/chat',
+    {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
